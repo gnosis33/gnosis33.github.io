@@ -1,0 +1,513 @@
+@media screen and (max-width: 1023px) {
+    [aria-controls="navbarDropdown"] {
+        display: block;    
+    }
+
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: var(--size-50);
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 0px 20px, rgba(52, 49, 75, 0.1);
+    }
+    [aria-expanded="true"] ~ ul li a {
+        margin-right: var(--size-20);
+    }
+
+    nav[aria-expanded="true"] {
+        background-color: var(--white);
+    }
+
+    .navbar-nav li {
+        padding: var(--size-30) 0;
+    }
+
+    .nav-flex li a {
+        font-size: var(--size-18);
+    }
+   
+
+    .spacer {
+        margin: 0;
+    }
+
+    br {
+        display: none;
+    }
+
+    .navbar .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    .navbar .navbar-toggler {
+        margin: auto 0;
+        margin-right: var(--size-10);
+        border: transparent;
+        background-color: transparent;
+        font-size: var(--size-20);
+        font-weight: 900;
+    }
+
+    .bg-header {
+        background-position: 130% -10px;
+    }
+
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-wrapper {
+        text-align: center;
+        margin-bottom: var(--size-50);   
+    }
+
+    .hero-header {
+        font-size: var(--size-40);
+        font-weight: 600;
+        margin: auto;
+    }
+
+    .hero-header br {
+        display: block;
+    }
+
+    .hero-wrapper h4 {
+        margin-bottom: var(--size-50);
+    }
+
+    .hero-wrapper .btn,
+    .service-grid .btn,
+    .big-price-card .btn,
+    .form .btn {
+        border-radius: var(--size-40);
+        padding: 0.75rem 1rem;
+    }
+
+    .hero-wrapper .spacer {
+        margin-bottom: var(--size-30);
+    }
+
+
+    .icons-wrapper {
+        width: 718px;
+        height: 165px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .size-two {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon-size {
+        width: var(--size-40);
+        top: 15px;
+    }
+
+
+    .google {
+        right: 550px;
+    }
+
+    .atlassian {
+        right: 365px;
+    }
+
+    .asana {
+        right: 130px;
+    }
+
+    .paypal {
+        top: 90px;
+        right: 535px;
+    }
+
+    .weave {
+        top: 90px;
+        right: 240px;
+    }
+
+    .google-A {
+        top: 170px;
+        right: 440px;
+    }
+
+    .calendar {
+        top: 190px;
+        right: 160px;
+    }
+
+    .key-benefits h3 {
+        font-size: var(--size-30);
+        font-weight: 700;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .service-card p {
+        font-size: var(--size-14);
+        font-weight: 600;
+    }
+
+    .change-grid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .change-grid h3 {
+        font-size: var(--size-30);
+    }
+
+    .software-for-people {
+        height: 380px;
+        width: 800px;
+        background-position: center;
+        background-size: auto;
+    }
+
+    .why h3 {
+        font-size: var(--size-30);
+    }
+
+    .why p {
+        font-size: var(--size-16);
+    }
+
+    .picture-grid {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: var(--size-30);
+    }
+
+    .picture {
+        margin-right: -200px;
+    }
+
+    .woman-container {
+        left: 10%;
+        width: 90%;
+    }
+
+    .hubspot-info {
+        text-align: center;
+    }
+
+    .trusted :nth-child(1) {
+        margin-bottom: var(--size-50);
+    }
+    .company-icons {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));    
+    }
+
+    .company-icons img {
+        width: 90px;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (min-width:250px) {
+        .service-card { max-width: 1023px;}
+        .big-price-card { max-width: 1023px;}
+        .description-card { max-width: 300px;}
+    }
+
+    .big-price-card {
+        text-align: center;
+        width: 100%;
+    }
+
+    .big-price-card :nth-child(3) {
+        font-size: var(--size-18);
+        text-align: left;
+    }
+
+    .big-price-card .spacer {
+        margin-right: auto;
+        margin-bottom: var(--size-10);
+    }
+
+    .little-cards {
+        padding: var(--size-30);
+        width: 100%;
+    }
+
+
+    .hire-us {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hire {
+        flex-grow: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .hire-child {
+        flex-direction: row;
+    }
+
+    .hire-top {
+        flex-grow: 1;
+    }
+
+    .i br {
+        display: block;
+    }
+
+    .h-rule {
+        max-width: 20rem;
+    }
+
+    .hire-bottom {
+        padding-top: var(--size-50);
+        margin-top: var(--size-10);
+    }
+
+    .profiles {
+        margin-top: var(--size-20);
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form input[type="text"] {
+        width: 45%;
+    }
+
+    .form textarea {
+        width: 100%;
+    }
+
+    .form .privacy {
+        margin-bottom: var(--size-30);
+    }
+
+    .links {
+        width: 60%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .copyright br {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .nav-flex {
+        flex-direction: column;
+    }
+
+    .spacer {
+        margin-right: 0;
+    }
+
+    .bg-header {
+        background-size: 500px 3000px;
+        background-position: 90% -1300px;
+        
+    }
+
+    .hero-header {
+        font-size: var(--size-25);
+    }
+
+    .hero-header br {
+        display: none;
+
+    }
+
+    .hero-header div {
+        display: block;
+    }
+
+    .breaker {
+        display: block;
+    }
+
+    .icons-wrapper {
+        width: 100px;
+    }
+
+    .google {
+        right: 161px;
+    }
+
+    .atlassian {
+        right: 32px;
+    }
+
+    .asana {
+        right: -104px;
+    }
+
+    .paypal {
+        right: 140px;
+    }
+
+    .weave {
+        right: -28px;
+    }
+
+    .google-A {
+        right: 74px;
+    }
+
+    .calendar {
+        right: -83px;
+    }
+
+    .key-benefits {
+        padding: 0;
+    }
+
+    .service-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .software-for-people {
+        width: 360px;
+        background-size: 360px;
+    }
+
+    .dot-grid {
+        margin-left: var(--size-20);
+    }
+
+    .dot-card {
+        display: flex;
+    }
+
+    .circle {
+        margin-left: 0;
+        margin-right: var(--size-40);
+
+    }
+
+    .woman-container {
+        width: 280px;
+    }
+
+    .woman {
+        height: 240px;
+    }
+
+    .dots {
+        top: 4.3rem;
+        left: -1.8rem;
+    }
+
+    .dots img {
+        height: 200px;
+    }
+
+    .company-icons :nth-child(1) {
+        margin-bottom: var(--size-30);
+    }
+
+    .company-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-icons img {
+        margin-bottom: var(--size-30);
+    }
+
+    .little-cards {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hire-child {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .breaking-class {
+        display: block;
+    }
+
+    .form input[type="text"] {
+        border-color: transparent;
+        width: 100%;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-links {
+        margin-bottom: var(--size-30);
+    }
+
+    .contact .brand {
+        margin: auto;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ref-socials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-top: var(--size-30);
+    }
+
+    .social-icons i {
+        margin: auto 10px;
+    }
+
+    .socials {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+
+}

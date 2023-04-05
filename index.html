@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gnosis33</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">       
+    </head>
+    <body>
+        
+        <div id="canvas-container">
+            <div class="links">
+                <div class="portfolio">Portfolio</div>
+                <a href="./CodeRad/index.html" class="btn btn-coderad">Coderad</a>
+                <a href="./SaaS/HTML/index.html" class="btn btn-saas">Front</a>
+                <a href="./ARCHON/index.html" class="btn btn-archon">Archon</a>
+                <!-- <a href="./MyTube/index.html" class="btn btn-mytube">MyTube</a> -->
+                <a href="https://medium.com/@brentjosephwise" class="btn btn-medium">Medium</a>
+            </div>
+        </div>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+        <script src="gameoflife.js"></script>
+        <script src="script.js"></script>
+        <!-- <script src="slotmachine.js"></script> -->
+        <script>
+            async function loadAndExecuteScripts() {
+                // Load and execute the first script
+                const { runSlotMachine } = await import('./slotmachine.js');
+                runSlotMachine();
+            }
+
+            loadAndExecuteScripts();
+        </script>
+        <!-- <script>
+            async function loadAndExecuteScripts() {
+                // Load and execute the first script
+                await import('https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js','./gameoflife.js');
+            }
+
+            loadAndExecuteScripts();
+        </script> -->
+        
+    </body>
+</html>

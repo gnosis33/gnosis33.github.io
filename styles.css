@@ -1,0 +1,131 @@
+/* General styles */
+:root {
+
+  --btn-coderad-color: #7cc6bf;
+/*   --btn-mytube-color: #3da699;
+  --btn-saas-color: #209587;
+  --btn-medium-color: #008475; */
+  --btn-saas-color: #5ab5ac;
+  --btn-archon-color: #3da699;
+  --btn-medium-color: #209587;
+  --text-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  #canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.95); /* Semi-transparent background */
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    z-index: 1; /* Ensures the links are displayed above the canvas */
+  }
+
+  .portfolio {
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+    border-radius: 50rem;
+    width: 100px;
+    height: auto;
+    padding: 5px 0px;
+    margin: 5px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+    width: 110px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    transition: ease-in-out 0.3s;
+  }
+  
+  .btn-archon {
+    background-color: var(--btn-archon-color);
+    color: var(--text-color);
+  }
+  
+  .btn-coderad {
+    background-color: var(--btn-coderad-color);
+    color: var(--text-color);
+  }
+  
+  
+  .btn-mytube {
+    background-color: var(--btn-mytube-color);
+    color: var(--text-color);
+  }
+  
+  .btn-saas {
+    background-color: var(--btn-saas-color);
+    color: var(--text-color);
+  }
+  
+  .btn-medium {
+    background-color: var(--btn-medium-color);
+    color: var(--text-color);
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }  
